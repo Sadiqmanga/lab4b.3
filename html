@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript DOM Operations</title>
+    <style>
+        .myStyle {
+            background-color: coral;
+            padding: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div id="myElement">Original Text</div>
+    <div id="myDIV">
+        <p>I am a myDIV.</p>
+    </div>
+    <button id="myButton">Click me</button>
+    <script>
+        // a. Modify the text content of #myElement
+        var element = document.getElementById("myElement");
+        element.textContent = "Modified Text";
+
+        // b. Add the class "myStyle" to #myDIV
+        var div = document.getElementById("myDIV");
+        div.classList.add("myStyle");
+
+        // c. Add a click event listener to #myButton
+        var button = document.getElementById("myButton");
+        button.addEventListener("click", function() {
+            alert("Button clicked!");
+        });
+    </script>
+</body>
+</html>
